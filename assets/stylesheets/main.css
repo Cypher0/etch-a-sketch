@@ -1,0 +1,38 @@
+h1, button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 3em;
+  text-align: center;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+#grid-container {
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: #000000;
+}
+
+#grid-container header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#grid {
+  width: 960px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.grid-square {
+  height: 240px;
+  width: 240px;
+  background-color: white;
+}
