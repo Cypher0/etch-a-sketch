@@ -13,26 +13,44 @@ h1 {
   margin: 0 auto;
 }
 
+button {
+  width: 120px;
+  height: 40px;
+  font-weight: bold;
+  color: #e6e600;
+  background-color: #333333;
+  border: 1px solid white;
+  border-radius: 7%;
+}
+
+.btn-active {
+  color: #ff1a1a;
+  border: 1px solid #ff1a1a;
+}
+
 #grid-container {
   margin: 0 auto;
   max-width: 960px;
-  background-color: #000000;
 }
 
 #grid-container header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  justify-content: flex-end;
 }
 
 #grid {
   width: 960px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  border: 1px solid #000;
+
 }
 
 .grid-square {
   height: 240px;
   width: 240px;
-  background-color: white;
+  background-color: #000;
+  opacity: 0;
 }
