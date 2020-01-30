@@ -1,11 +1,15 @@
+body {
+  background-color: #000;
+}
 h1, button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-  margin: 40px 0;
+  margin: 60px 0;
   font-size: 3em;
   text-align: center;
+  color: #fff;
 }
 
 .container {
@@ -14,18 +18,24 @@ h1 {
 }
 
 button {
-  width: 120px;
-  height: 40px;
+  width: 150px;
+  height: 60px;
+  font-size: 1.1em;
   font-weight: bold;
   color: #e6e600;
   background-color: #333333;
-  border: 1px solid white;
+  border: 3px solid #e6e600;
   border-radius: 7%;
+}
+
+button:hover {
+  color: #ff1a1a;
+  border-color: #ff1a1a;
 }
 
 .btn-active {
   color: #ff1a1a;
-  border: 1px solid #ff1a1a;
+  border: 3px solid #ff1a1a;
 }
 
 #grid-container {
@@ -41,16 +51,17 @@ button {
 }
 
 #grid {
+  margin-top: 30px;
   width: 960px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border: 1px solid #000;
+  grid-template-columns: repeat(16, 1fr);
+  background-color: #fff;
+  border: 3px solid #ff1a1a;
+  border-radius: 1%;
 
 }
 
 .grid-square {
-  height: 240px;
-  width: 240px;
-  background-color: #000;
-  opacity: 0;
+  height: 60px;
+  width: 60px;
 }
